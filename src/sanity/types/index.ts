@@ -1,5 +1,4 @@
 import type { SanityImageObject } from '@sanity/image-url/lib/types/types';
-import type { ListNestMode } from 'next-sanity';
 
 export type SanityImage = SanityImageObject & {
   alt?: string;

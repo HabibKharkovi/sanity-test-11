@@ -41,9 +41,9 @@ const ImageMarqueeSection = ({ images, sectionContents, bgImage, icon }: ImageMa
       <div className="image-marquee__marquee">
         <Marquee className={"image-marquee__track"} >
           {
-            images.map((image) => {
+            images.map((image, index) => {
               return (
-                <div className="image-marquee__image">
+                <div key={index} className="image-marquee__image">
                   <SanityImageBlock image={image} />
                 </div>
               )

@@ -1,4 +1,3 @@
-import { Link } from 'lucide-react';
 import { defineField, defineType } from 'sanity';
 
 const imageWithTitle = defineType({

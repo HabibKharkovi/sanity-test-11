@@ -6,7 +6,7 @@ interface ImageWithTextOverlaySectionProps {
   imageWithTextCards: any; // Replace 'any' with the correct type if known
 }
 
-const ImageWithTextOverlaySection: React.FC<ImageWithTextOverlaySectionProps> = ({ imageWithTextCards }) => {
+const ImageWithTextOverlaySection = ({ imageWithTextCards }: ImageWithTextOverlaySectionProps) => {
 
   return (
     <section className="image-with-text">

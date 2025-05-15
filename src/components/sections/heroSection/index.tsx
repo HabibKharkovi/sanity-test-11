@@ -1,5 +1,4 @@
 import type { SanityImage } from '@/sanity/types';
-import SanityImageBlock from '../../utility/SanityImageBlock';
 import './heroSection.css';
 import Picture from '@/components/utility/Picture';
 

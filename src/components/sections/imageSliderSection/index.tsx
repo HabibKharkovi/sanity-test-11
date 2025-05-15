@@ -1,5 +1,5 @@
 'use client';
-import type { Button, SanityImage as BaseSanityImage, SanityImage } from '@/sanity/types';
+import type { Button, SanityImage } from '@/sanity/types';
 
 import SectionHeadings from '@/components/utility/SectionHeadings';
 import CustomLink from '@/components/utility/CustomLink';

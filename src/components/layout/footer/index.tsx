@@ -11,7 +11,7 @@ const Footer = async () => {
     tags: ['footer'],
   });
 
-  const { footerNav, footerBottomLinks, socialLinks } = footer_data;
+  const { footerNav, footerBottomLinks } = footer_data;
 
   return (
     <footer className="footer">
