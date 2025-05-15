@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--font-primary);
+}
+
+:root {
+  --color-primary: #FFFFFF;
+  --color-secondary: #C5A288;
+  --font-primary: 'Brandon Grotesque';
+  --font-secondary: "Cormorant Garamond";
+  --font-Tertiary: 'Karl Geoff';
+  --bg-color: #161616;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.page-width {
+  max-width: 1440px;
+  padding: 0px 40px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--font-secondary)
+}
+
+p {
+  margin: 0;
+}
+
+.small-screen-svg {
+  display: none;
+}
+
+.primary-btn {
+  display: block;
+  max-width: fit-content;
+  padding: 13px 20px;
+  outline: 0.5px solid #FFFFFF80;
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+  background-color: #00000003;
+  font-weight: 420;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  text-align: center;
+  transition: all ease 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-btn span {
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  transition: all ease 0.2s;
+}
+
+.primary-btn:hover {
+  background-color: #444444;
+  outline-offset: 3px;
+}
+
+.primary-btn:hover span {
+  width: 9px;
+}
+
+.section-title {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.101;
+  letter-spacing: -0.6px;
+  text-align: center;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.section-sub-title {
+  font-family: var(--font-primary);
+  font-weight: 420;
+  font-size: 15px;
+  line-height: 1;
+  display: block;
+  letter-spacing: 2.25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 29px;
+}
+
+@media screen and (min-width:1441px) {
+  .page-width {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width:990px) {
+  .page-width {
+    padding: 0px 20px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .page-width {
+    padding: 0px 10px;
+  }
+
+  .large-screen-svg {
+    display: none;
+  }
+
+  .small-screen-svg {
+    display: block;
+  }
+
+  .sub-title {
+    font-size: 32px;
+  }
+
+  .section-sub-title {
+    font-size: 13px;
+  }
+
+  span.small-screen-svg {
+    display: flex;
+    align-items: center;
+  }
+}

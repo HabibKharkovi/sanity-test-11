@@ -1,0 +1,146 @@
+.image-with-text {
+  background-color: #111;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.image-with-text img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.image-with-text__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.image-with-text__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #222;
+  min-width: calc(33.33% - 10.67px);
+  min-height: 672px;
+  flex: 1;
+}
+
+.image-with-text .section-titles {
+  padding-bottom: 30px;
+}
+
+.image-with-text__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.image-with-text__image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.image-with-text__image.mobile-image {
+  display: none;
+}
+
+.image-with-text__texts-wrap {
+  z-index: 2;
+  max-width: 93.7%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 80px 60px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.image-with-text .section-title {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:1279px) {
+  .image-with-text__texts-wrap {
+    max-width: 100%;
+    padding: 60px 40px;
+  }
+
+  .image-with-text__item {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width:990px) {
+  .image-with-text__texts-wrap {
+    padding: 20px;
+  }
+
+  .image-with-text .section-title {
+    font-size: 32px;
+    letter-spacing: 0;
+  }
+
+  .image-with-text__item {
+    min-width: calc(50% - 8px);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .image-with-text {
+    position: relative;
+    z-index: 2;
+  }
+
+  .image-with-text__wrapper {
+    display: flex;
+    gap: 10px;
+    grid-template-columns: unset;
+    flex-wrap: wrap;
+  }
+
+  .image-with-text__item {
+    grid-column: unset;
+    max-width: 100%;
+    width: 100%;
+    flex: 100%;
+    min-height: 640px;
+  }
+
+  .image-with-text__texts-wrap {
+    padding: 50px 20px;
+  }
+
+  .image-with-text .section-sub-title {
+    margin: 0 0 16px;
+    font-size: 13px;
+  }
+
+  .image-with-text .section-title {
+    font-size: 32px;
+  }
+
+  .image-with-text__image.desktop-image {
+    display: none;
+  }
+
+  .image-with-text__image.mobile-image {
+    display: block;
+  }
+}
