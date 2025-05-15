@@ -23,23 +23,3 @@ export const HEADER_QUERY = defineQuery(`*[_type == "header"][0]{
 export const FOOTER_QUERY = defineQuery(`*[_type == "footer"][0]{
     ...,
   }`);
-
-// *[_type == "headerNav"][0]{
-//   ...,
-//   mainNav[]{
-//     ...,
-//     internal->{
-//       slug{
-//         current
-//       }
-//     }
-//   },
-//   secondaryNav[]{
-//     ...,
-//     internal->{
-//       slug{
-//         current
-//       }
-//     }
-//   }
-// }

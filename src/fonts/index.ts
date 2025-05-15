@@ -36,35 +36,3 @@ const cormorant = Cormorant_Garamond({
 });
 
 export { brandonGrotesque, cormorant, karlGeoff };
-
-// --font-primary: 'Brandon Grotesque';
-// --font-secondary: "Cormorant Garamond";
-// --font-Tertiary: 'Karl Geoff';
-
-
-// @font-face {
-//   font-family: 'Brandon Grotesque';
-//   src: url('../fonts/BrandonGrotesque-Light.woff2') format('woff2'),
-//     url('../fonts/BrandonGrotesque-Light.woff') format('woff');
-//   font-weight: 300;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: 'Brandon Grotesque';
-//   src: url('../fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
-//     url('../fonts/BrandonGrotesque-Regular.woff') format('woff');
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: 'Karl Geoff';
-//   src: url('../fonts/KarlGeoff-Natural.woff2') format('woff2'),
-//     url('../fonts/KarlGeoff-Natural.woff2') format('woff');
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: swap;
-// }
